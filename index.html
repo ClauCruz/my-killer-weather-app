@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500&family=PT+Sans:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Search"
+          class="search-bar"
+          id="city-input"
+          autocomplete="off"
+        />
+      </form>
+      <button class="location" id="get-location">Your location</button>
+      <h1 class="current-city"></h1>
+      <div class="current-date" id="todays-date"></div>
+      <img src="images/sunshine.png" alt="" class="sunshine" />
+      <div class="current-temp"></div>
+      <span class="units">
+        <a href="#" id="c-unit">°C</a> |
+        <a href="#" id="f-unit">°F</a>
+      </span>
+      <div class="min-max">15°C/25°</div>
+      <div class="min-max" id="weather-description"></div>
+      <br />
+      <div class="today-border">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">Now</div>
+            <div class="col-2">13</div>
+            <div class="col-2">14</div>
+            <div class="col-2">15</div>
+            <div class="col-2">16</div>
+            <div class="col-2">17</div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+            <div class="col">
+              <img src="images/red-sun.png" alt="" class="red-sun" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-4">Sun</div>
+        <div class="col-4">
+          <img src="images/red-sun.png" alt="" class="red-sun" />
+        </div>
+        <div class="col-4">15 25</div>
+      </div>
+      <div class="row">
+        <div class="col-4">Mon</div>
+        <div class="col-4">
+          <img src="images/red-sun.png" alt="" class="red-sun" />
+        </div>
+        <div class="col-4">15 25</div>
+      </div>
+      <div class="row">
+        <div class="col-4">Tue</div>
+        <div class="col-4">
+          <img src="images/red-sun.png" alt="" class="red-sun" />
+        </div>
+        <div class="col-4">15 25</div>
+      </div>
+      <div class="row">
+        <div class="col-4">Wed</div>
+        <div class="col-4">
+          <img src="images/red-sun.png" alt="" class="red-sun" />
+        </div>
+        <div class="col-4">15 25</div>
+      </div>
+      <div class="row">
+        <div class="col-4">Thu</div>
+        <div class="col-4">
+          <img src="images/red-sun.png" alt="" class="red-sun" />
+        </div>
+        <div class="col-4">15 25</div>
+      </div>
+    </div>
+    <script src="src/app1.js"></script>
+  </body>
+</html>

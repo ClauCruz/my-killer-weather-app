@@ -19,8 +19,9 @@
 
 .location {
   display: inline;
-  background: #f1f1f1;
+  background: #a393eb;
   border-color: #a393eb;
+  color: white;
   box-shadow: 0 2px #e6dee9;
   border-radius: 4px;
   position: relative;
@@ -29,7 +30,8 @@
 }
 
 .location:hover {
-  background-color: #a393eb;
+  background-color: #5e63b6;
+  border-color: #5e63b6;
   color: white;
   transition: all 200ms ease-in-out;
 }

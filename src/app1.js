@@ -39,6 +39,12 @@ function showTemp(response) {
   currentCity.innerHTML = response.data.name;
   let weatherCondition = document.querySelector("#weather-description");
   weatherCondition.innerHTML = response.data.weather[0].main;
+  let weatherIcon = document.querySelector("#weather-icon");
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function getLocation(position) {

@@ -56,12 +56,6 @@ body {
 .current-date {
   margin-top: -10px;
 }
-.sunshine {
-  display: block;
-  margin: auto;
-  margin-top: 15px;
-  width: 200px;
-}
 
 .current-temp {
   display: inline;

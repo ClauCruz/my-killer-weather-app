@@ -31,14 +31,18 @@ function newCity(event) {
 let searchCity = document.querySelector("#search-form");
 searchCity.addEventListener("submit", newCity);
 
-//HOMEWORk
 function showTemp(response) {
+  celsiusTemp = response.data.main.temp;
   let locationTemp = document.querySelector(".current-temp");
-  locationTemp.innerHTML = Math.round(response.data.main.temp);
+  locationTemp.innerHTML = Math.round(celsiusTemp);
   let currentCity = document.querySelector(".current-city");
   currentCity.innerHTML = response.data.name;
   let weatherCondition = document.querySelector("#weather-description");
   weatherCondition.innerHTML = response.data.weather[0].main;
+  let windSpeed = document.querySelector("#wind-speed");
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = Math.round(response.data.main.humidity);
   let weatherIcon = document.querySelector("#weather-icon");
   weatherIcon.setAttribute(
     "src",
@@ -64,5 +68,26 @@ function searchLocation(event) {
 
 let locationButton = document.querySelector("#get-location");
 locationButton.addEventListener("click", searchLocation);
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let currentTemp = document.querySelector(".current-temp");
+  currentTemp.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let currentTemp = document.querySelector(".current-temp");
+  currentTemp.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#f-unit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#c-unit");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchDefault("Guadalajara");

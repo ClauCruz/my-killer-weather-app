@@ -1,5 +1,6 @@
 .weather-app {
-  border: 2px solid #a2a8d3;
+  max-width: 500px;
+  border: 2px solid #e6dee9;
   padding: 15px;
   border-radius: 8px;
   background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
@@ -70,13 +71,24 @@ body {
   left: 25px;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .red-sun {
   width: 30px;
 }
 
 .today-border {
   border: 3px solid #a2a8d3;
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 8px;
   margin: auto;
 }

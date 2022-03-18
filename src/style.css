@@ -65,10 +65,20 @@ body {
   left: 26px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .units {
   position: relative;
   top: -19px;
   left: 25px;
+}
+
+.units .active {
+  text-decoration: none;
+  color: black;
+  cursor: default;
 }
 
 li {

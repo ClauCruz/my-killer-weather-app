@@ -35,33 +35,21 @@
       <h1 class="current-city"></h1>
       <div class="current-date" id="todays-date"></div>
       <img src="" alt="" id="weather-icon" />
-      <div class="current-temp"></div>
-
+      <div id="current-temp"></div>
       <span class="units">
         <a href="#" id="c-unit" class="active">°C</a> |
         <a href="#" id="f-unit">°F</a>
       </span>
-
       <div class="row">
-        <div class="col-4">
-          <ul>
-            <li id="weather-description"></li>
-            <li class="min-max">15°C/25°</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li>Wind</li>
-            <li id="wind-speed"></li>
-            Km/H
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li>Humidity</li>
-            <li id="humidity"></li>
-            %
-          </ul>
+        <div class="col-4" id="weather-description"></div>
+        <div class="col-4">Wind</div>
+        <div class="col-4">Humidity</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4" id="min-max-temp">15°C/25°</div>
+          <div class="col-4" id="wind-speed">Km/H</div>
+          <div class="col-4" id="humidity">%</div>
         </div>
       </div>
       <br />

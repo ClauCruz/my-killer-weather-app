@@ -33,7 +33,7 @@ searchCity.addEventListener("submit", newCity);
 
 function showTemp(response) {
   celsiusTemp = response.data.main.temp;
-  let locationTemp = document.querySelector(".current-temp");
+  let locationTemp = document.querySelector("#current-temp");
   locationTemp.innerHTML = Math.round(celsiusTemp);
   let currentCity = document.querySelector(".current-city");
   currentCity.innerHTML = response.data.name;
@@ -72,7 +72,7 @@ locationButton.addEventListener("click", searchLocation);
 function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  let currentTemp = document.querySelector(".current-temp");
+  let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = Math.round(fahrenheitTemp);
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
@@ -80,7 +80,7 @@ function showFahrenheitTemp(event) {
 
 function showCelsiusTemp(event) {
   event.preventDefault();
-  let currentTemp = document.querySelector(".current-temp");
+  let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = Math.round(celsiusTemp);
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");

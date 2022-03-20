@@ -60,9 +60,7 @@ body {
 
 #current-temp {
   display: inline;
-  font-size: 50px;
-  position: relative;
-  left: 26px;
+  font-size: 60px;
 }
 
 .col-4 {

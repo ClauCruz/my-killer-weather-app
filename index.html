@@ -34,18 +34,20 @@
       <button class="location" id="get-location">Your location</button>
       <h1 class="current-city"></h1>
       <div class="current-date" id="todays-date"></div>
-      <img src="" alt="" id="weather-icon" />
-      <div id="current-temp"></div>
-      <span class="units">
-        <a href="#" id="c-unit" class="active">°C</a> |
-        <a href="#" id="f-unit">°F</a>
-      </span>
-      <div class="row">
-        <div class="col-4" id="weather-description"></div>
-        <div class="col-4">Wind</div>
-        <div class="col-4">Humidity</div>
+      <div class="d-flex justify-content-center">
+        <img src="" alt="" id="weather-icon" />
+        <div id="current-temp"></div>
+        <span class="units">
+          <a href="#" id="c-unit" class="active">°C</a> |
+          <a href="#" id="f-unit">°F</a>
+        </span>
       </div>
       <div class="container">
+        <div class="row">
+          <div class="col-4" id="weather-description"></div>
+          <div class="col-4">Wind</div>
+          <div class="col-4">Humidity</div>
+        </div>
         <div class="row">
           <div class="col-4" id="min-max-temp">15°C/25°</div>
           <div class="col-4" id="wind-speed">Km/H</div>

@@ -72,9 +72,9 @@ a {
 }
 
 .units {
+  font-size: 16px;
   position: relative;
-  top: -19px;
-  left: 25px;
+  top: -30px;
 }
 
 .units .active {

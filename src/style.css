@@ -60,11 +60,7 @@ body {
 
 #current-temp {
   display: inline;
-  font-size: 60px;
-}
-
-.col-4 {
-  display: inline;
+  font-size: 65px;
 }
 
 a {
@@ -74,7 +70,7 @@ a {
 .units {
   font-size: 16px;
   position: relative;
-  top: -30px;
+  top: -29px;
 }
 
 .units .active {

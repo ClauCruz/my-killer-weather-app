@@ -51,7 +51,10 @@
           <div class="col-4">Humidity</div>
         </div>
         <div class="row">
-          <div class="col-4" id="min-max-temp">15°C/25°</div>
+          <div class="col-4">
+            <span class="current-max">25°</span>
+            <span class="current-min">15°</span>
+          </div>
           <div class="col-4"><span id="wind-speed"></span>Km/H</div>
           <div class="col-4"><span id="humidity"></span>%</div>
         </div>
@@ -88,45 +91,21 @@
         </div>
       </div>
       <br />
-      <br />
-      <div class="row">
-        <div class="col-4">Sun</div>
-        <div class="col-4">
-          <img src="images/red-sun.png" alt="" class="red-sun" />
+      <div class="week-forecast">
+        <div class="row">
+          <div class="col-2">
+            <div clauss="forecast-day">Sun</div>
+            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="50" />
+          <div class="forecast-max-min">
+            <span class="forecast-max">25°</span>
+            <span class="forecast-min">15°</span>
+          </div>
         </div>
-        <div class="col-4">15 25</div>
-      </div>
-      <div class="row">
-        <div class="col-4">Mon</div>
-        <div class="col-4">
-          <img src="images/red-sun.png" alt="" class="red-sun" />
-        </div>
-        <div class="col-4">15 25</div>
-      </div>
-      <div class="row">
-        <div class="col-4">Tue</div>
-        <div class="col-4">
-          <img src="images/red-sun.png" alt="" class="red-sun" />
-        </div>
-        <div class="col-4">15 25</div>
-      </div>
-      <div class="row">
-        <div class="col-4">Wed</div>
-        <div class="col-4">
-          <img src="images/red-sun.png" alt="" class="red-sun" />
-        </div>
-        <div class="col-4">15 25</div>
-      </div>
-      <div class="row">
-        <div class="col-4">Thu</div>
-        <div class="col-4">
-          <img src="images/red-sun.png" alt="" class="red-sun" />
-        </div>
-        <div class="col-4">15 25</div>
       </div>
     </div>
     <script src="src/app1.js"></script>
   </body>
+</br>
   <small class="git-link" id="git-link">
     <a href="https://github.com/ClauCruz/my-killer-weather-app" target="_blank"
       >Open-source code

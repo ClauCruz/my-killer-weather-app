@@ -79,8 +79,22 @@ a {
   cursor: default;
 }
 
+.week-forecast {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.current-min {
+  opacity: 0.6;
+}
+
 .red-sun {
-  width: 30px;
+  width: 20px;
+}
+
+.forecast-min {
+  opacity: 0.6;
 }
 
 .today-border {

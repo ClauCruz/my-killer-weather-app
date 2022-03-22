@@ -31,6 +31,33 @@ function newCity(event) {
 let searchCity = document.querySelector("#search-form");
 searchCity.addEventListener("submit", newCity);
 
+function displayForecast() {
+  let forecast = document.querySelector("#week-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div clauss="forecast-day">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt=""
+          width="45"
+        />
+        <div class="forecast-max-min">
+          <span class="forecast-max">25°</span>
+          <span class="forecast-min">15°</span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 function showTemp(response) {
   celsiusTemp = response.data.main.temp;
   let locationTemp = document.querySelector("#current-temp");
@@ -95,3 +122,4 @@ let celsiusLink = document.querySelector("#c-unit");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchDefault("Guadalajara");
+displayForecast();

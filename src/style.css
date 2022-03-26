@@ -37,11 +37,6 @@
   transition: all 200ms ease-in-out;
 }
 
-.border {
-  border-style: solid;
-  border-width: 500px;
-}
-
 body {
   text-align: center;
   font-family: "Fira Sans";
@@ -51,7 +46,7 @@ body {
 .current-city {
   font-size: 55px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .current-date {
@@ -89,19 +84,8 @@ a {
   opacity: 0.6;
 }
 
-.red-sun {
-  width: 20px;
-}
-
 .forecast-min {
   opacity: 0.6;
-}
-
-.today-border {
-  border: 3px solid #a2a8d3;
-  border-radius: 30px;
-  padding: 8px;
-  margin: auto;
 }
 
 .git-link {

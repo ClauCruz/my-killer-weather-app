@@ -1,7 +1,7 @@
 .weather-app {
-  max-width: 600px;
+  max-width: 550px;
   border: 2px solid #e6dee9;
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 }
@@ -9,7 +9,7 @@
 .search-bar {
   display: block;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 35px;
   padding-left: 10px;
   border: none;
   border-radius: 4px;

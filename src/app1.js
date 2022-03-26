@@ -59,7 +59,7 @@ function displayForecast(response) {
         />
         <div class="forecast-max-min">
           <span class="forecast-max">${Math.round(forecastDay.temp.max)}°</span>
-          <span class="forecast-min">${Math.round(forecastDay.temp.min)}</span>
+          <span class="forecast-min">${Math.round(forecastDay.temp.min)}°</span>
         </div>
       </div>
   `;
@@ -96,6 +96,10 @@ function showTemp(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
+  let currentCityMax = document.querySelector(".current-max");
+  currentCityMax.innerHTML = Math.round(response.data.main.temp_max);
+  let currentCityMin = document.querySelector(".current-min");
+  currentCityMin.innerHTML = Math.round(response.data.main.temp_min);
 
   getForecast(response.data.coord);
 }
@@ -144,4 +148,3 @@ let celsiusLink = document.querySelector("#c-unit");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchDefault("Guadalajara");
-displayForecast();

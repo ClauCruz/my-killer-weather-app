@@ -27,7 +27,7 @@
   border-radius: 4px;
   position: relative;
   top: -30px;
-  left: 160px;
+  right: -165px;
 }
 
 .location:hover {
@@ -38,9 +38,10 @@
 }
 
 body {
+  max-width: 550px;
+  margin: 60px auto;
   text-align: center;
   font-family: "Fira Sans";
-  margin: 80px 500px 80px 500px;
 }
 
 .current-city {
